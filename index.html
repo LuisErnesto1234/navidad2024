@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especial de Navidad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body class="bg-red-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-red-600 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-3xl font-bold">🎄 Navidad Especial 🎄</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#promociones" class="hover:underline">Promociones</a></li>
+          <li><a href="#productos" class="hover:underline">Productos</a></li>
+          <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Swiper Hero Section -->
+  <section class="bg-red-100 py-20 relative">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide text-center px-4">
+          <h2 class="text-4xl font-bold mb-4">🎅 Vive la Magia de la Navidad</h2>
+          <p class="text-lg mb-6">Descubre nuestras ofertas exclusivas y llena tus fiestas de alegría y amor.</p>
+          <a href="#promociones" class="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700">Ver Promociones</a>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide text-center px-4">
+          <h2 class="text-4xl font-bold mb-4">🎄 Haz de esta Navidad algo inolvidable</h2>
+          <p class="text-lg mb-6">Regalos, decoraciones y mucho más para ti y los tuyos.</p>
+          <a href="#productos" class="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700">Explorar Productos</a>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide text-center px-4">
+          <h2 class="text-4xl font-bold mb-4">🎁 Ofertas Exclusivas</h2>
+          <p class="text-lg mb-6">No te pierdas los descuentos especiales en tus artículos favoritos.</p>
+          <a href="#contacto" class="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700">Contáctanos</a>
+        </div>
+      </div>
+
+    
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next w-1/4"></div>
+      <div class="swiper-button-prev w-1/4"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <style>
+    .swiper-button-next, .swiper-button-prev {
+  /* Tamaño y forma */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+  /* Iconos */
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+
+  /* Posición */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-family: 'Arial';
+  font-size: 20px;
+}
+
+.swiper-button-next::after {
+  content: '\f105'; /* Flecha derecha */
+}
+
+.swiper-button-prev::after {
+  content: '\f104'; /* Flecha izquierda */
+}
+  </style>
+
+  <!-- Promociones -->
+  <section id="promociones" class="py-16">
+    <div class="container mx-auto text-center px-4">
+      <h3 class="text-3xl font-bold mb-8">🎁 Promociones Exclusivas</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Promo 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="https://www.elmueble.com/medio/2023/09/29/pon-y-quita-el-arbol-de-navidad-estos-dias-y-tendras-suerte-el-proximo-ano_d315e27c_230929045816_900x900.jpg" alt="Promo 1" class="rounded-lg mb-4">
+          <h4 class="font-bold text-lg mb-2">Arbol Navideño🎄</h4>
+          <p class="text-gray-600 mb-4">Hasta un 50% de descuento en arboles navideños.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+        <!-- Promo 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="https://promart.vteximg.com.br/arquivos/ids/7757637-1000-1000/imageUrl_1.jpg?v=638394842376800000" alt="Promo 2" class="rounded-lg mb-4">
+          <h4 class="font-bold text-lg mb-2">Luces de Navidad 🎅</h4>
+          <p class="text-gray-600 mb-4">Encuentra los mejores luces para esta Navidad.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+        <!-- Promo 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="https://cdn.milenio.com/uploads/media/2021/12/03/nacimiento-navideno-shutterstock.jpg" alt="Promo 3" class="rounded-lg mb-4">
+          <h4 class="font-bold text-lg mb-2">Nacimientos</h4>
+          <p class="text-gray-600 mb-4">Sorprendete con nuestros nacimientos llenas de amor.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="bg-red-100 py-16">
+    <div class="container mx-auto text-center px-4">
+      <h3 class="text-3xl font-bold mb-8">🌟 Productos Destacados</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Producto -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="https://plazavea.vteximg.com.br/arquivos/ids/29684151-1000-1000/20423457.jpg" alt="Producto 1" class="rounded-lg mb-4">
+          <h4 class="font-bold text-lg">
+            Soldado Cascanueces DECO HOME 25cm Surtido D N</h4>
+          <p class="text-gray-600">Desde $10.99</p>
+        </div>
+        <!-- Repite para más productos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-red-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">📞 Contáctanos</h3>
+      <form class="max-w-xl mx-auto">
+        <div class="mb-4">
+          <label for="nombre" class="block text-sm font-medium mb-2">Nombre</label>
+          <input type="text" id="nombre" class="w-full border-gray-300 rounded-lg p-3">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium mb-2">Correo Electrónico</label>
+          <input type="email" id="email" class="w-full border-gray-300 rounded-lg p-3">
+        </div>
+        <div class="mb-4">
+          <label for="mensaje" class="block text-sm font-medium mb-2">Mensaje</label>
+          <textarea id="mensaje" class="w-full border-gray-300 rounded-lg p-3" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 w-full">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white py-6">
+    <div class="container mx-auto text-center px-4">
+      <p>&copy; 2024 Especial de Navidad. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
